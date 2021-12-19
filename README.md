@@ -59,3 +59,9 @@ https://jenizar-sapui5-covid19.herokuapp.com
  1. worldometers api : `https://corona-stats.online?format=json`
  
  2. `https://github.com/sagarkarira/coronavirus-tracker-cli?fbclid=IwAR0h0WPHflSW5q9bRlo3IdjRwUXf9wd0_LsBGgNensyfG8UWpG2xH-7-MuM`
+
+ 3. https://github.com/jenizar/sap-ui5-walkthrough
+ 
+ 4. https://github.com/jenizar/SAP-Fiori-Worklist-Template 
+ 
+ 5. https://github.com/jenizar/heroku-sapui5-mockd-internal 
