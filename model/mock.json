@@ -1,0 +1,29 @@
+{
+	"Corona": [
+		{
+			"Country": "Spain",
+			"Iso3": "ESP",
+			"Continent": "Europe",
+			"Confirmed": "194416",
+			"Flag": "https://raw.githubusercontent.com/NovelCOVID/API/master/assets/flags/es.png",
+			"Updated": "1587257780910",
+			"Data2": {
+				"Id": "723",
+				"Lat": "100",
+				"Long": "32",
+				"Death": 15,
+				"Critical": "69",
+				"Recovered": "11",
+				"Active": "69",
+				"TodayCases": "11",
+				"TodayDeaths": "5"
+			},
+			"LineItems": 
+				{
+					"CasesPerOneMillion": "1250",
+					"DeathsPerOneMillion": "123",
+					"TestsPerOneMillion": "1000"
+				}                 
+		}
+	]
+}
