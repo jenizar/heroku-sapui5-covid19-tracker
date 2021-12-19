@@ -6,7 +6,7 @@ Deploy SAPUI5 apps Covid-19 Global Data to Heroku cloud
 
 $ git clone `https://github.com/jenizar/heroku-sapui5-covid19-tracker.git`
 
-$ cd sapui5-covid19-tracker (make sure you are in heroku-sapui5-covid19-tracker directory)
+$ cd heroku-sapui5-covid19-tracker (make sure you are in heroku-sapui5-covid19-tracker directory)
 
 $ heroku login 
 
