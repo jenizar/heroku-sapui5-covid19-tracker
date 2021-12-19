@@ -1,0 +1,109 @@
+<core:View
+	controllerName="sap.ui.demo.myFiori.view.Detail"
+	xmlns="sap.m"
+	xmlns:form="sap.ui.layout.form"
+	xmlns:core="sap.ui.core" >
+	<Page
+		title="{i18n>DetailTitle}"
+		class="sapUiFioriObjectPage"
+		showNavButton="{device>/isPhone}"
+		navButtonPress="handleNavButtonPress" >
+		<ObjectHeader
+			title="{country}"
+			icon="{countryInfo/flag}"
+			iconDensityAware="false"
+			number="{continent}"
+			numberUnit="{countryInfo/iso3}" >
+			<attributes>
+				<ObjectAttribute text="Updated" />
+				<ObjectAttribute text="Confirmed Cases : {confirmed}" />
+			</attributes>
+			<firstStatus>
+				<ObjectStatus
+					text="{
+						path: 'updated'						
+					}" />
+			</firstStatus>
+		</ObjectHeader>
+		<IconTabBar
+			expanded="{device>/isNoPhone}" >
+			<items>
+				<IconTabFilter
+					icon="sap-icon://database">
+					<form:SimpleForm
+						id="SupplierForm"
+						minWidth="1024" >
+						<core:Title text="Data" />
+						<Label text="Death"/>
+						<Text text="{deaths}" />
+						<Label text="Critical"/>
+						<Text text="{critical}" />
+						<Label text="Recovered"/>
+						<Text text="{recovered}" />
+						<Label text="Active"/>
+						<Text text="{active}" />
+						<Label text="Today Cases"/>
+						<Text text="{todayCases}" />
+						<Label text="Today Deaths"/>
+						<Text text="{todayDeaths}" />
+						<Label text="Cases Per 1 Million"/>
+						<Text text="{casesPerOneMillion}" />
+						<Label text="Deaths Per 1 Million"/>
+						<Text text="{deathsPerOneMillion}" />
+						<Label text="Tests Per 1 Million"/>
+						<Text text="{testsPerOneMillion}" />
+					</form:SimpleForm>
+				</IconTabFilter>
+			</items>
+		</IconTabBar>
+		<Table
+			headerText="{i18n>LineItemTableHeader}"
+			items="" >
+			<columns>
+				<Column
+					minScreenWidth="Tablet"
+					demandPopin="true"
+					hAlign="Center" >
+					<header><Label text="Country Id" /></header>
+				</Column>
+				<Column
+					minScreenWidth="Tablet"
+					demandPopin="true"
+					hAlign="Center" >
+					<header><Label text="Latitude" /></header>
+				</Column>
+				<Column
+					hAlign="Right" >
+					<header><Label text="Longitude" /></header>
+				</Column>
+			</columns>
+			<ColumnListItem
+				type="Navigation"
+				press="handleLineItemPress" >
+				<cells>
+					<Text
+						text="{countryInfo/_id}" />
+					<Text
+						text="{countryInfo/lat}"/>
+					<Text
+						text="{countryInfo/long}"/>
+
+				</cells>
+			</ColumnListItem>
+		</Table>
+		<footer>
+			<Bar>
+				<contentRight>
+					<Button
+						text="{i18n>ApproveButtonText}"
+						type="Accept"
+						icon="sap-icon://accept"
+						press="handleApprove" />
+				</contentRight>
+				<contentLeft>
+                   <Label text="by: John Eswin Nizar © 2020" class="sapUiSmallMarginBottom" />
+				</contentLeft>					
+			</Bar>
+		</footer>
+	</Page>
+</core:View>
